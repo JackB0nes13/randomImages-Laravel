@@ -25,6 +25,6 @@ class Images extends Controller
     public function random() {
         $values = ['http://127.0.0.1:8000/images/noble.jpg', 'http://127.0.0.1:8000/images/city.jpg' , 'http://127.0.0.1:8000/images/soldier.jpg', 'http://127.0.0.1:8000/images/walls.jpg'];
         shuffle($values);
-        print_r($values);
+        print_r(json_encode($values));
     }
 }
